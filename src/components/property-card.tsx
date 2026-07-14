@@ -1,14 +1,17 @@
+"use client";
+
 import type { Property } from "@/data/properties";
 import { Card, CardContent } from "@/components/ui/card";
 import { PriceDisplay } from "@/components/price-display";
 import { getCurrencyConfig } from "@/constants/currencies";
+import { useCurrency } from "@/hooks/use-currency";
 
 interface PropertyCardProps {
   property: Property;
-  currency: string;
 }
 
-export function PropertyCard({ property, currency }: PropertyCardProps) {
+export function PropertyCard({ property }: PropertyCardProps) {
+  const { currency } = useCurrency();
   const config = getCurrencyConfig(currency);
 
   return (
