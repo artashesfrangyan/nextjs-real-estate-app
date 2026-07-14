@@ -10,9 +10,11 @@
 - shadcn/ui (Button, Card, Select)
 - Radix UI Select
 
-## Запуск
+## Инструкция по запуску:
 
 ```bash
+git clone https://github.com/artashesfrangyan/nextjs-real-estate-app.git
+cd nextjs-real-estate-app
 npm install
 npm run dev
 ```
